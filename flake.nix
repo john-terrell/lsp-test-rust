@@ -23,9 +23,6 @@
             rustc
             rustfmt
           ];
-          # Dependencies that only exist in the runtime environment
-          buildInputs = with pkgs; [
-          ];
         };
       });
 }
