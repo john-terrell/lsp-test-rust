@@ -15,22 +15,16 @@
           nativeBuildInputs = with pkgs; [
             # Make sure this is first so clangd LSP works correctly
             cargo
-            clang-tools
-            llvmPackages_16.libstdcxxClang
             lldb_17
             gdb
             git
             git-lfs
-            nix-index
-            pkg-config
-            pre-commit
             rust-analyzer
             rustc
             rustfmt
           ];
           # Dependencies that only exist in the runtime environment
           buildInputs = with pkgs; [
-            zstd
           ];
         };
       });
